@@ -1,0 +1,47 @@
+
+
+
+* prohledat síť - hotovo
+* porovnat projekt online/offline - projekt v aplikátoru je v TIA V13 dojde k reinicializaci veškerých datových bloků, je nutná záloha
+* změnit IP adresu všech zařízení - hotovo
+* update vizualizace - hotovo
+* update plc - hotovo
+* nastavení parametrů lepící technologie - hotovo
+* nastavení připojení k FTP - hotovo
+* instalace WINCC runtime do externího počítače pro vizualizaci procesu - hotovo
+* napojení WINCC vizualiace - hotovo
+* přenesení licence pro WINCC
+* nastavení VLAN na externím switchi pro účely připojení na firemní síť a komunikaci s FTP Gral - v procesu
+* test automatického odpouštění - hotovo
+* test připojení k FTP
+* test konfigurace FTP Gral
+* test měření objemu lepidla
+* test funkce lepicí technologie v manuálním režimu - hotovo
+* napojit čidlo přítomnosti pistole v dokovací stanici
+
+
+** poznámky ** 
+poptat vyrobení nástavce na větší myxér na aplikační pistoli
+upravil jsem funkci na cyklické sčítání objemu lepidla, je třeba toto nakopírovat i do prvního projektu
+
+
+** poznamky k novému aplikátoru **
+* manuální režim
+* servisní režim
+* režim gral
+
+
+ze X stanovišť bude přicházet soubor s konfigurací s různými názvy specifickými pro dané stanoviště do jednoho IN adresáře. Je třeba testovat na přítomnost X různých souborů 
+Je třeba vyřešit jak rozhodovat ze kterého pracoviště požadavek přišel
+-> zobrazit nabýdku dostupných konfiguračních souborů z daných stanic pomocí tlačítek + potvrzení výběru
+-> bude se kontrolovat přítomnost x různých souborů s různým jménem
+
+
+upravit servisní režim komunikace s gralem:
+ číselná hodnota = kontrolovaná aplikace lepidla
+ nula = servisní režim s udáním důvodu
+ řetězec MAN = režim bez horní hranice množství lepidla s referencí naneseného lepidla posílaná do gralu
+
+přidat manuální odpouštění:
+namýchání směsi
+propláchnutí mixéru
